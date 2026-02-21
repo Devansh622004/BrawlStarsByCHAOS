@@ -47,7 +47,7 @@ nav ul li a:hover {
 .hero {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("images/thumbnails/bg.jpg");
+    url("bg.jpg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -240,3 +240,4 @@ footer {
     background: black;
     color: white;
 }
+
