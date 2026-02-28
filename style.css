@@ -241,3 +241,23 @@ footer {
     color: white;
 }
 
+.hero .btn {
+    min-width: 150px;
+    text-align: center;
+}
+
+nav ul li a {
+  font-weight: bolder;
+}
+
+#about .card {
+    height: auto !important;
+    min-height: auto !important;
+    width: fit-content;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#about .card::before {
+    animation: none !important;
+}
