@@ -47,7 +47,7 @@ nav ul li a:hover {
 .hero {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("bg.jpg");
+    url("images/thumbnails/bg.jpg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -260,4 +260,255 @@ nav ul li a {
 
 #about .card::before {
     animation: none !important;
+}
+
+/* ABOUT PAGE ANIMATION (PREMIUM CLEAN) */
+
+.about-page {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: aboutFade 0.8s ease forwards;
+}
+
+@keyframes aboutFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animate card separately */
+.about-page .card {
+  opacity: 0;
+  transform: scale(0.95);
+  animation: cardPop 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes cardPop {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.about-page .card:hover {
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+  transform: scale(1.02);
+}
+
+/* PREMIERE PAGE ANIMATION */
+
+/* Page enters from left (editor feel) */
+.premiere-page {
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: premiereSlide 0.8s ease forwards;
+}
+
+@keyframes premiereSlide {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Card animation */
+.premiere-page .card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: premiereCard 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes premiereCard {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Subtle glowing border (editing software vibe) */
+.premiere-page .card {
+  border: 2px solid transparent;
+  background: linear-gradient(#111, #111) padding-box,
+              linear-gradient(90deg, #ff0000, #ff4d4d, #ff0000) border-box;
+}
+
+/* Hover effect */
+.premiere-page .card:hover {
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.4);
+  transform: scale(1.02);
+}
+
+/* AFTER EFFECTS PAGE (VFX STYLE) */
+
+.ae-page {
+  opacity: 0;
+  transform: scale(0.95);
+  animation: aeFade 0.8s ease forwards;
+}
+
+@keyframes aeFade {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Card cinematic entry */
+.ae-page .card {
+  opacity: 0;
+  transform: translateY(40px) rotateX(10deg);
+  animation: aeCard 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes aeCard {
+  to {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+  }
+}
+
+/* Neon glow border */
+.ae-page .card {
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 20px rgba(0,255,255,0.4);
+}
+
+/* Hover = motion graphics feel */
+.ae-page .card:hover {
+  transform: scale(1.05) rotateZ(1deg);
+  box-shadow: 0 0 40px rgba(0,255,255,0.8);
+}
+
+/* WEB DEV PAGE (TECH / HACKER STYLE) */
+
+.webdev-page {
+  background: #0a0a0a;
+  color: #00ff9f;
+  opacity: 0;
+  animation: webFade 0.8s ease forwards;
+}
+
+@keyframes webFade {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Heading glitch effect */
+.webdev-page h2 {
+  position: relative;
+  display: inline-block;
+  color: #00ff9f;
+  animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 0 red, -2px 0 blue; }
+  25% { text-shadow: -2px 0 red, 2px 0 blue; }
+  50% { text-shadow: 2px 2px red, -2px -2px blue; }
+  75% { text-shadow: -2px -2px red, 2px 2px blue; }
+  100% { text-shadow: 2px 0 red, -2px 0 blue; }
+}
+
+/* Card animation */
+.webdev-page .card {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: webCard 0.8s ease forwards;
+  animation-delay: 0.3s;
+  background: #111;
+  border: 1px solid #00ff9f;
+  box-shadow: 0 0 15px rgba(0,255,159,0.3);
+}
+
+@keyframes webCard {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover effect */
+.webdev-page .card:hover {
+  box-shadow: 0 0 30px rgba(0,255,159,0.7);
+  transform: scale(1.03);
+}
+
+.intro {
+    font-size: 19px;
+    color: #ffffff;
+    text-align: center;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 
+            0 0 5px #f5f7f7,
+            0 0 10px #fcfdfd,
+            0 0 20px #f9fafa;
+    }
+    to {
+        text-shadow: 
+            0 0 10px #fcfefe,
+            0 0 20px #f9fafa,
+            0 0 40px #fbfcfc,
+            0 0 80px #feffff;
+    }
+}
+
+.Subscribers{
+    font-size: 19px;
+    color: #ffffff;
+    text-align: center;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 
+            0 0 5px red,
+            0 0 10px red,
+            0 0 20px red;
+    }
+    to {
+        text-shadow: 
+            0 0 10px red,
+            0 0 20px red,
+            0 0 40px red,
+            0 0 80px red;
+    }
+}
+
+/* 🔥 GLOW EFFECT FOR ALL CARDS */
+.card {
+    transition: 0.3s ease;
+}
+
+/* Glow effect */
+.card:hover {
+    box-shadow: 
+        0 0 15px #ff00ff,
+        0 0 25px #00f0ff,
+        0 0 35px #ff0000;
+    transform: translateY(-5px);
+}
+
+/* Optional: always slight glow (even without hover) */
+.card {
+    box-shadow: 0 0 30px purple;
+}
+
+#typing::after {
+    content: "|";
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
 }
