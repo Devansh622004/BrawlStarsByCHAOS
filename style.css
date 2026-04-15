@@ -595,3 +595,118 @@ nav ul li a {
   }
 
 }
+/* ================= GLOBAL MOBILE RESPONSIVE (ALL PAGES) ================= */
+
+@media (max-width: 768px) {
+
+  /* NAVBAR (ALL PAGES) */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  nav h1 {
+    font-size: 18px;
+  }
+
+  nav ul {
+    justify-content: center;
+    padding: 0;
+  }
+
+  /* HERO SECTION (INDEX ONLY) */
+  .hero {
+    padding: 100px 20px;
+    background-size: cover;
+  }
+
+  .hero h2 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  /* BUTTON STACK */
+  .hero .btn {
+    display: block;
+    margin: 10px auto !important;
+  }
+
+  /* SECTION (ALL PAGES) */
+  .section {
+    padding: 20px;
+  }
+
+  .section h2 {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  /* TEXT BLOCKS (ABOUT, AE, PREMIERE, WEBDEV) */
+  .section div[style*="max-width:800px"] {
+    padding: 15px !important;
+  }
+
+  .section p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  /* CONTACT BOX */
+  .contact-box {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .contact-box p {
+    font-size: 14px;
+  }
+
+  /* YOUTUBE STATS */
+  section div[style*="display:flex"] {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  /* CARDS (INDEX PAGE) */
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    height: auto !important;
+  }
+
+  /* IMAGES */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px) {
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 13px;
+  }
+
+  nav h1 {
+    font-size: 16px;
+  }
+
+  .section h2 {
+    font-size: 20px;
+  }
+
+}
