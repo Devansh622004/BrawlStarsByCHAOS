@@ -512,3 +512,86 @@ nav ul li a {
     0%, 50%, 100% { opacity: 1; }
     25%, 75% { opacity: 0; }
 }
+
+
+/* ================= MOBILE RESPONSIVE (ADD ONLY) ================= */
+
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  nav ul {
+    justify-content: center;
+    padding: 0;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    padding: 100px 20px;
+    background-size: cover;
+  }
+
+  .hero h2 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  /* BUTTONS STACK */
+  .hero .btn {
+    display: block;
+    margin: 10px auto !important;
+  }
+
+  /* SECTION PADDING */
+  .section {
+    padding: 20px;
+  }
+
+  /* YOUTUBE STATS FIX */
+  section div[style*="display:flex"] {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  /* CARDS GRID */
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    height: auto !important;
+  }
+
+  /* IMAGES */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px) {
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 13px;
+  }
+
+  nav h1 {
+    font-size: 18px;
+  }
+
+}
